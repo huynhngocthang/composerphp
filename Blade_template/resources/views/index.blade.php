@@ -47,6 +47,8 @@
                     <td>{{ $item->Content }}</td>
                     <td>{{ $item->created_at }}</td>
                     <td>{{ $item->updated_at }}</td>
+                <td><img style="width:150px ;" src="/storage/images/{{$item->image}}" alt="erorr"></td>
+                    <td><a href="#">Thêm mới</a></td>
                 </tr>
                 @empty
                 <tr>

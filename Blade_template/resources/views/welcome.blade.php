@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">ADD NEW TASK</a>
+                    <a href="{{ route('task.create') }}">ADD NEW TASK</a>
                     <a href="{{route('task.index') }}">TASKS LIST</a>
                 </div>
             </div>

@@ -18,6 +18,7 @@ class CreateTasksTable extends Migration
             $table->string('Tasktitle') ;
             $table->string('Content') ;
             $table->timestamps();
+            $table->longText('image') ;
         });
     }
 
