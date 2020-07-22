@@ -48,7 +48,8 @@
                     <td>{{ $item->created_at }}</td>
                     <td>{{ $item->updated_at }}</td>
                 <td><img style="width:150px ;" src="/storage/images/{{$item->image}}" alt="erorr"></td>
-                    <td><a href="#">Thêm mới</a></td>
+                <td><a href="{{ route('task.edit', $item->id) }}">Sửa</a></td>
+                <td><a href="{{ route('task.destroy', $item->id) }}">Xóa</a></td>
                 </tr>
                 @empty
                 <tr>
@@ -61,6 +62,9 @@
             </tbody>
         </table>
         @endif
+        <div class="links">
+            <a href="{{ route('task.create') }}">ADD NEW TASK</a>
+        </div>
 
     </div>
 </div>

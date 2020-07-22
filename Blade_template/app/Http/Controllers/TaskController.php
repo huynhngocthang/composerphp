@@ -5,14 +5,13 @@ namespace App\Http\Controllers;
 use App\Task;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-
 use function GuzzleHttp\Promise\task;
 
 class TaskController extends Controller
 {
     public function index() {
         $tasks = Task::all() ;
-
+        // dd($task) ;
         return view('index', compact('tasks')) ;
     }
 
@@ -50,6 +49,57 @@ class TaskController extends Controller
         Session::flash('create-success', $message);
 
         return redirect()->route('task.index', compact('message'));
+
+    }
+
+    public function edit($id) {
+        $task = Task::findOrFail($id) ;
+        return view('edit', compact('task')) ;
+    }
+
+    public function update(Request $request, $id) {
+        $task = Task::findOrFail($id) ;
+        $task->Tasktitle = $request->input('inputTitle') ;
+        $task->Content = $request->input('inputContent') ;
+
+        if($request->hasFile('inputFile')) {
+            $currentImg = $task->image ;
+            if($currentImg) {
+                Storage::delete('/public/', $currentImg);
+            }
+            // $image = $request->file('inputFile') ;
+            // $path = $image->store('images','public') ;
+
+            $file = $request->file('inputFile') ;
+
+            $fileExtension = $file->getClientOriginalExtension() ;
+            $fileName = $request->inputFileName ;
+
+            $newFileName = "$fileName.$fileExtension" ;
+
+            $request->file('inputFile')->storeAs('public/images', $newFileName) ;
+
+
+            $task->image = $newFileName ;
+        }
+        $task->created_at = $request->input('inputDueDate') ;
+        $task->save() ;
+
+        Session::flash('success','Cập nhật thành công') ;
+        return redirect()->route('task.index') ;
+    }
+
+    public function destroy($id) {
+        $task = Task::findOrFail($id) ;
+        $image = $task->image ;
+
+        if($image) {
+            Storage::delete('/public/' . $image);
+        }
+        $task->delete() ;
+
+        Session::flash('success','Xóa thành công') ;
+        return redirect()->route('task.index') ;
 
     }
 }

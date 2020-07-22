@@ -20,3 +20,9 @@ Route::get('/tasks', 'TaskController@index')->name('task.index') ;
 Route::get('/create','TaskController@create')->name('task.create') ;
 
 Route::post('/tacks','TaskController@store')->name('task.store') ;
+
+Route::get('{id}/edit', 'TaskController@edit')->name('task.edit') ;
+
+Route::post('{id}/edit','TaskController@update')->name('task.update') ;
+
+Route::get('/{id}/destroy','TaskController@destroy')->name('task.destroy') ;
