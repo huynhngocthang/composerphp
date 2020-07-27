@@ -19,11 +19,9 @@ Route::get('/', function() {
 
 Route::prefix('customer')->group(function () {
 
-    Route::get('index' , 'managerControleer@index') ;
+    Route::get('/index' , 'managerControleer@index') ;
 
-    Route::get('create', function () {
-        // hiển thị form tạo khách hàng
-    }) ;
+    Route::get('/create','managerControleer@create' ) ;
 
     Route::post('store', function() {
          // Xử lý lưu dữ liệu tạo khách hàng thong qua phương thức POST từ form
