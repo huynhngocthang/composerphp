@@ -29,6 +29,7 @@
                         class="form-control"
                         id="inputTitle"
                         name="inputTitle"
+             value="{{ old('inputTitle') }}"
                         required>
              </div>
              <div class="form-group">
@@ -37,7 +38,7 @@
                            id="inputContent"
                            name="inputContent"
                            rows="3"
-                           required></textarea>
+                           required>{{ old('inputContent') }}</textarea>
              </div>
              <div class="form-group">
                  <label for="inputDueDate">Due Date</label>
@@ -63,6 +64,15 @@
          <hr>
          <a href="{{ route('task.welcome') }}">< Back</a>
      </div>
+
+     <div class="error-message">
+    @if ($errors->any())
+        @foreach($errors->all() as $messages)
+            <p style="color:red">{{ $messages }}</p>
+        @endforeach
+    @endif
+</div>
+
  </div>
  <!-- Bootstrap JS -->
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

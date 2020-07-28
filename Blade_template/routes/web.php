@@ -19,7 +19,7 @@ Route::get('/tasks', 'TaskController@index')->name('task.index') ;
 
 Route::get('/create','TaskController@create')->name('task.create') ;
 
-Route::post('/tacks','TaskController@store')->name('task.store') ;
+Route::post('/create','TaskController@store')->name('task.store') ;
 
 Route::get('{id}/edit', 'TaskController@edit')->name('task.edit') ;
 

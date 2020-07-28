@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateTaskRequest;
 use App\Task;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -23,7 +24,7 @@ class TaskController extends Controller
         return view('welcome') ;
     }
 
-    public function store( Request $request) {
+    public function store(CreateTaskRequest $request) {
         $task = new Task() ;
         $task->Tasktitle = $request->inputTitle ;
         $task->Content = $request->inputContent ;
@@ -57,7 +58,7 @@ class TaskController extends Controller
         return view('edit', compact('task')) ;
     }
 
-    public function update(Request $request, $id) {
+    public function update(CreateTaskRequest $request, $id) {
         $task = Task::findOrFail($id) ;
         $task->Tasktitle = $request->input('inputTitle') ;
         $task->Content = $request->input('inputContent') ;
