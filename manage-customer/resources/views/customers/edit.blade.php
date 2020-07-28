@@ -22,6 +22,15 @@
          <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Hủy</button>
       </form>
       </div>
-     </div>
+
+      <div class="error-message">
+        @if ($errors->any())
+            @foreach($errors->all() as $nameError)
+                <p style="color:red">{{ $nameError }}</p>
+            @endforeach
+        @endif
+    </div>
+
+</div>
 </div>
 @endsection

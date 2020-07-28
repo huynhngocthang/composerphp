@@ -7,6 +7,9 @@
       <div class="col-12">
           <h1>Thêm mới khách hàng</h1>
       </div>
+
+      <p style='color:green'>{{ (isset($validated)) ? $validated : '' }}</p>
+
       <div class="col-12">
          <form method="post" action="{{ route('customers.store') }}">
          @csrf
@@ -25,6 +28,15 @@
          <button type="submit" class="btn btn-primary">Submit</button>
          </form>
        </div>
-     </div>
+
+       <div class="error-message">
+        @if ($errors->any())
+            @foreach($errors->all() as $nameError)
+                <p style="color:red">{{ $nameError }}</p>
+            @endforeach
+        @endif
+    </div>
+
+</div>
    </div>
 @endsection

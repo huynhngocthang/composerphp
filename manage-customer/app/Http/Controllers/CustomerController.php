@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Customer;
+use App\Http\Requests\FormExampleRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -19,16 +20,18 @@ class CustomerController extends Controller
         return view('customers.create') ;
     }
 
-    public function store(Request $request) {
+    public function store(FormExampleRequest $request) {
+        // $validated = $request->validated() ;
       $customer = new Customer() ;
       $customer->name = $request->input('name') ;
       $customer->email = $request->input('email') ;
       $customer->dob = $request->input('dob') ;
       $customer->save() ;
+    // dd(request()->all());
 
       session()->flash('success', 'tạo mới khách hàng thành công');
 
-      return redirect()->route('customers.index') ;
+      return redirect()->route('customers.index','validated') ;
 
     }
 
@@ -39,7 +42,7 @@ class CustomerController extends Controller
         return view('customers.edit', compact('customer')) ;
     }
 
-    public function update(Request $request, $id) {
+    public function update(FormExampleRequest $request, $id) {
         //thực hiện tác vị sửa
 
         $customer = Customer::findOrFail($id) ;
