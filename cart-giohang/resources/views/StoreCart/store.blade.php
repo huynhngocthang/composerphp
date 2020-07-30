@@ -12,7 +12,7 @@
     <thead>
       <tr>
         <th scope="col"><a href="">01.Giỏ hàng</a></th>
-        <th scope="col"><a href="">02.Đơn hàng</a></th>
+        <th scope="col"><a href="">02.Tên đơn hàng</a></th>
         <th scope="col"><a href="">03.Thanh toán</a></th>
       </tr>
     </thead>

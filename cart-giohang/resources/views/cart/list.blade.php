@@ -10,6 +10,10 @@
 </style>
 @section('content')
 
+<div class="card-body ml-5 text-right">
+    <a class="badge badge-primary " href=""><img src="/storage/images/cart.svg" style="width:30px ; height:30px" alt="error"></a>
+</div>
+
 <div class="d-flex flex-wrap ">
 @foreach ($carts as $key => $cart)
 

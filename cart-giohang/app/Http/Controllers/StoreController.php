@@ -10,12 +10,19 @@ class StoreController extends Controller
 {
     public function showCart($id) {
         $productkey = 'product' . $id ;
-        if(Session::has($productkey)) {
-            session::put($productkey) ;
-        }
+        Session::put($productkey,1) ;
+
+        $cart = Cart::findOrFail($id) ;
+        return view('cart.show',compact('cart')) ;
+    }
+
+    public function store($id) {
+        $productkey = 'product' . $id ;
+        Session::get($productkey,1) ;
+
         $cart = Cart::findOrFail($id) ;
 
-        return view('Storecart.store',compact('cart')) ;
+        return view('StoreCart.store',compact('cart')) ;
     }
 
 }

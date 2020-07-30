@@ -13,7 +13,7 @@
             <p class="card-text">{{ $cart->price }} đ</p>
             <div class="d-flex bd-highlight mb-3">
                 <div class="mr-auto p-2 bd-highlight">
-                    <a href="" class="alert-link">Mua ngay</a>
+                    <a href="{{ route('StoreCart.Showstore', $cart->id) }}" class="alert-link">Mua ngay</a>
                 </div>
                 <div class="p-2 bd-highlight">
                 <a href="{{ route('cart.list') }}" class="alert-link">Trở lại</a>
@@ -33,7 +33,7 @@
         </div>
       </div>
               <div class="card-body ml-5">
-              <a class="badge badge-primary " href="{{ route('StoreCart.store', $cart->id) }}"><img src="/storage/images/cart.svg" style="width:30px" alt="error"></a>
+              <a class="badge badge-primary " href="{{route('StoreCart.store',$cart->id)  }}"><img src="/storage/images/cart.svg" style="width:30px" alt="error"></a>
               </div>
     </div>
 

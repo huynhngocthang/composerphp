@@ -28,5 +28,7 @@ Route::group(['prefix' => 'cart'], function () {
 
 Auth::routes();
 
-Route::get('/{id}store','StoreController@showCart')->name('StoreCart.store');
+Route::get('/{id}Showstore','StoreController@showCart')->name('StoreCart.Showstore');
+
+Route::get('/{id}store', 'StoreController@store')->name('StoreCart.store') ;
 
