@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/product',function(){
-    return view('totality.header') ;
-}) ;
+Route::get('/dirtCoin', 'ProductController@index')->name('dirtCoinAll') ;
+
+Route::get('/image', function() {
+
+    return view('totality.image') ;
+});
