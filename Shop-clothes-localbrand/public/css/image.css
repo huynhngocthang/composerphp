@@ -1,6 +1,20 @@
 .collection-breadcrumb {
-    background-image: url('storage/images/collection_default.jpg');
+    background-image: url('../storage/images/collection_default.jpg');
     background-size: cover;
     background-position: center;
+    padding: 120px 0;
     text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #fff;
+    font-family: sans-serif ;
+    font-size: 17px;
+    text-transform: none;
+    letter-spacing: 3px;
+    display: inline-block;
+    background-color: #1b1b1b;
+    margin: 0 0 10px;
+    padding: 7px 10px 7px 20px;
 }

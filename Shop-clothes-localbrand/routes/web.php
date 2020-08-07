@@ -23,3 +23,19 @@ Route::get('/image', function() {
 
     return view('totality.image') ;
 });
+
+Route::get('/footer', function() {
+
+    return view('totality.footer') ;
+});
+Route::get('/dasboard', function() {
+
+    return view('dasboard.dasboard') ;
+});
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+

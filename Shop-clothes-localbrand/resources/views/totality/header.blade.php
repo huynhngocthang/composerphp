@@ -24,8 +24,8 @@
                                 <a class="nav-link dropdown-toggle" title="SHOP" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 SHOP
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                    <a class="dropdown-item" title="ALL" href="#">ALL</a>
+                                <div class="dropdown-menu opacity-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item"  title="ALL" href="#">ALL</a>
                                     <div class="dropdown-divider"></div>
                                   <a class="dropdown-item" title="TOPS" href="#">TOPS</a>
                                   <div class="dropdown-divider"></div>
@@ -66,7 +66,7 @@
             <div class="p-2 ">
                 <div class="d-flex">
                     <a href="#" class="badge badge-light mr-2"><img src="//bizweb.dktcdn.net/100/369/010/themes/752396/assets/pic-search.png?1596352745267" alt="search"></a>
-                    <a href="#" class="badge badge-light mr-2"><i style="font-size:35" class="fa">&#xf007;</i></a>
+                <a href="{{route('login') }}" class="badge badge-light mr-2"><i style="font-size:35" class="fa">&#xf007;</i></a>
                     <a href="#" class="badge badge-light"><img src="//bizweb.dktcdn.net/100/369/010/themes/752396/assets/cart-icon.png?1596352745267" style="width:26px" alt="store"></a>
                 </div>
             </div>

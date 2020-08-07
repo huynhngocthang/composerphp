@@ -12,11 +12,19 @@
     @stack('header-css')
     @stack('image-css')
 
+    @stack('footer-css')
+    @stack('dasboard-css')
+
 </head>
 <body>
+@yield('login')
 @yield('header')
 @yield('image')
 
+
+@yield('footer')
+
+@yield('dasboard')
 
 
 
@@ -26,5 +34,7 @@
 
 
     @stack('header-js')
+    @stack('dasboard-js')
+
 </body>
 </html>

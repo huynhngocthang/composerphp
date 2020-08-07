@@ -1,0 +1,115 @@
+.card-header a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.card-header span {
+    font-family: sans-serif;
+}
+
+.card-body {
+    font-family: sans-serif;
+}
+
+.card-body h5 {
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 18px;
+}
+
+.card {
+    font-family: sans-serif;
+}
+
+.bd-highlight p {
+    font-size:17px ;
+}
+
+.instagram-link a {
+    color: rgb(71, 68, 68);
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 0 4px;
+}
+
+.br-card {
+    background-image: url('../storage/images/anhbia.jpg');
+    background-size: cover;
+}
+
+.ps-highlight {
+    position: relative;
+    top: -15px;
+    left: -15px;
+    text-align: left;
+}
+.ps-highlight a {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.ps-highlight p {
+    position: relative;
+    top: -14 px;
+    left: 55px;
+    text-align: left;
+    color: whitesmoke;
+}
+
+.ps-btn {
+    justify-content: center;
+    margin-right: 5rem;
+    position: relative;
+    top: 20px;
+    left: -10px;
+    width: 100px;
+    background: #fff;
+}
+.ps-btn a {
+    color: rgb(153, 151, 151);
+    font-weight: bold;
+    padding: 0;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.br-highlight {
+    height: 200px;
+    margin-left: 8rem;
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+
+    body { margin: 0; }
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 15s slidy infinite;
+    }
+
+    .size-image {
+        width: 100px;
+        height: 100px;
+    }
+
+
