@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -11,7 +12,10 @@ class ProductController extends Controller
         // if(Auth::user()->role == 2) {
 
         // }
+        $products = Product::all() ;
 
-        return view('totality.header') ;
+        return view('totality.content',compact('products')) ;
     }
+
+
 }

@@ -1,6 +1,5 @@
-@extends('layout.app')
 
-@section('title','Dirt Coin Footer')
+
 
 @push('footer-css')
 <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
@@ -88,7 +87,7 @@
                     <a target="_blank" href="https://www.instagram.com/dirtycoins.vn/"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
                 </div>
                 <div class="p-2 bd-highlight">
-                    <img style="width:200px; height:80px" src="../storage/images/bocongthuong.png" alt="err">
+                    <img style="width:200px; height:80px" src="../../storage/images/bocongthuong.png" alt="err">
                 </div>
         </div>
         <div class="p-2 flex-fill bd-highlight br-highlight">
@@ -98,7 +97,7 @@
                             <div class="d-flex flex-column bd-highlight mb-3 ">
                                 <div class="p-2 bd-highlight ps-highlight">
                                    <a target="_blank" href="https://www.facebook.com/DirtyCoins.VN/">
-                                    <img style="width:50px; height:50px " src="../storage/images/logo.jpg" alt="errorr">
+                                    <img style="width:50px; height:50px " src="../../storage/images/logo.jpg" alt="errorr">
                                    </a>
                                    <a href="#">
                                        Dirty Coins
@@ -122,20 +121,20 @@
                             {{-- <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/"> --}}
                             <div id="slider" class="size-image">
                             <figure>
-                            <img src="../storage/images/aobuom.jpg" alt>
-                            <img src="../storage/images/balosao.jpg" alt>
-                            <img src="../storage/images/quancaro.jpg" alt>
-                            <img src="../storage/images/quanpatern.jpg" alt>
-                            <img src="../storage/images/vidirtcoin.jpg" alt>
+                            <img src="../../storage/images/aobuom.jpg" alt>
+                            <img src="../../storage/images/balosao.jpg" alt>
+                            <img src="../../storage/images/quancaro.jpg" alt>
+                            <img src="../../storage/images/quanpatern.jpg" alt>
+                            <img src="../../storage/images/vidirtcoin.jpg" alt>
                             </figure>
                             </div>
                             <div id="slider" class="size-image">
                                 <figure>
-                                    <img src="../storage/images/vidirtcoin.jpg" alt>
-                                    <img src="../storage/images/quanpatern.jpg" alt>
-                                    <img src="../storage/images/quancaro.jpg" alt>
-                                    <img src="../storage/images/balosao.jpg" alt>
-                                    <img src="../storage/images/aobuom.jpg" alt>
+                                    <img src="../../storage/images/vidirtcoin.jpg" alt>
+                                    <img src="../../storage/images/quanpatern.jpg" alt>
+                                    <img src="../../storage/images/quancaro.jpg" alt>
+                                    <img src="../../storage/images/balosao.jpg" alt>
+                                    <img src="../../storage/images/aobuom.jpg" alt>
                                 </figure>
                                 </div>
 
@@ -146,4 +145,3 @@
   </div>
 
 
-@endsection

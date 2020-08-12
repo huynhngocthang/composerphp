@@ -1,6 +1,3 @@
-@extends('layout.app')
-
-@section('title','image')
 
 @push('image-css')
 <link rel="stylesheet" href="{{ asset('css/image.css') }}">
@@ -15,5 +12,3 @@
 
     </h1>
 </div>
-
-@endsection

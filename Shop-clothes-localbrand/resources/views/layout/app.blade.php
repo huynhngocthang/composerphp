@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('home')</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     @stack('header-css')
+
     @stack('image-css')
 
+    @stack('content-css')
+
     @stack('footer-css')
+
     @stack('dasboard-css')
+
+    @stack('detail-css')
 
 </head>
 <body>
-@yield('login')
+
+
 @yield('header')
 @yield('image')
 
+
+@yield('content')
 
 @yield('footer')
 
@@ -34,7 +44,9 @@
 
 
     @stack('header-js')
+    @stack('content-js')
     @stack('dasboard-js')
+    @stack('detail-js')
 
 </body>
 </html>

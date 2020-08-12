@@ -16,7 +16,7 @@
     transform: translateY(3px);
   }
 
-  .dropdown-menu {
+  .br-dropdown {
     margin-top: 0;
     background: rgb(85, 84, 84);
     opacity: 0.7;

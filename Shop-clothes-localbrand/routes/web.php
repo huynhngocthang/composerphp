@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,21 +18,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dirtCoin', 'ProductController@index')->name('dirtCoinAll') ;
 
-Route::get('/image', function() {
-
-    return view('totality.image') ;
-});
-
-Route::get('/footer', function() {
-
-    return view('totality.footer') ;
-});
 Route::get('/dasboard', function() {
 
     return view('dasboard.dasboard') ;
 });
+
+Route::group(['prefix' => 'dirtycoins'], function () {
+    Route::get('/','dirtycoinController@index')->name('dirtcoinall') ;
+
+    Route::get('/detail/{id}','dirtycoinController@show')->name('detail') ;
+});
+
+Route::group(['prefix' => 'cart'], function () {
+    Route::get('/','CartController@index')->name('cartAll') ;
+    Route::get('/{product}/add','CartController@addCart')->name('addcart') ;
+    Route::get('/{product}/add'. '')->name('destroycart') ;
+});
+
 
 
 

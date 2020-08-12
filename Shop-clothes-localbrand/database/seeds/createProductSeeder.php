@@ -21,7 +21,10 @@ class createProductSeeder extends Seeder
          3 ngăn chính, trong đó có 1 ngăn được trang bị zipper YKK.
          1 ngăn phụ có zipper YKK kèm 4 ngăn đựng thẻ.' ;
          $product->price = 400.000 ;
-         $product->image = 'volcano.jpg';
+         $product->image1 = 'volcano.jpg';
+         $product->image2 = 'volcano-wallet-2w.jpg' ;
+         $product->image3 = 'volcano-wallet-3-w.jpg' ;
+         $product->save() ;
 
         $product = new Product() ;
         $product->id = 2;
@@ -33,7 +36,10 @@ class createProductSeeder extends Seeder
          Ví có 2 ngăn chính, có khóa kéo cho 1 ngăn.
          Số lượng ngăn đựng thẻ lên đến 8 ngăn.';
          $product->price = 290.000 ;
-         $product->image = 'wallewallet.jpg';
+         $product->image1 = 'wallewallet.jpg';
+         $product->image2 = 'dc-walle-wallet-2-w.jpg' ;
+         $product->image3 = 'dc-walle-wallet-3-w.jpg' ;
+         $product->save() ;
 
          $product = new Product() ;
         $product->id = 3;
@@ -43,7 +49,10 @@ class createProductSeeder extends Seeder
          Form oversize.
          Lưng quần bo vải gân kèm drawstring thun bên trong.' ;
          $product->price = 450.000 ;
-         $product->image = 'quancaro.jpg';
+         $product->image1 = 'quancaro.jpg';
+         $product->image2 = '';
+         $product->image3 = '';
+         $product->save() ;
 
          $product = new Product() ;
         $product->id = 4;
@@ -52,7 +61,10 @@ class createProductSeeder extends Seeder
          Tag cao su được thêu trực tiếp lên sản phẩm
          Free size' ;
          $product->price = 120.000 ;
-         $product->image = 'vidirtcoin.jpg';
+         $product->image1 = 'vidirtcoin.jpg';
+         $product->image2 = 'head-band-bla-2.jpg' ;
+         $product->image3 = 'head-band-bla-3' ;
+         $product->save() ;
 
          $product = new Product() ;
         $product->id = 5;
@@ -62,7 +74,10 @@ class createProductSeeder extends Seeder
          Khóa áo được sử dụng nút bấm tiện dụng.
          Áo có hai túi ở hai bên thân áo' ;
          $product->price = 650.000 ;
-         $product->image = 'monarchallover.jpg';
+         $product->image1 = 'monarchallover.jpg';
+         $product->image2 = '15.jpg' ;
+         $product->image3 = 'monarch-all-over-print-jacket-3-w.jpg' ;
+         $product->save() ;
 
          $product = new Product() ;
         $product->id = 6;
@@ -73,7 +88,10 @@ class createProductSeeder extends Seeder
          Form oversize.
          Lưng quần bo vải gân kèm drawstring thun bên trong.' ;
          $product->price = 500.000 ;
-         $product->image = 'quanpatern.jpg';
+         $product->image1 = 'quanpatern.jpg';
+         $product->image2 = '';
+         $product->image3 = '';
+         $product->save() ;
 
          $product = new Product() ;
         $product->id = 7;
@@ -84,7 +102,10 @@ class createProductSeeder extends Seeder
          1 ngăn lớn chính trang bị dây rút và khóa bấm.
          Dây đeo có thể tùy chinh độ dài' ;
          $product->price = 800.000 ;
-         $product->image = 'logopattern.jpg';
+         $product->image1 = 'logopattern.jpg';
+         $product->image2 = '';
+         $product->image3 = '';
+         $product->save() ;
 
          $product = new Product() ;
         $product->id = 8;
@@ -92,7 +113,10 @@ class createProductSeeder extends Seeder
         $product->introduce = 'Áo vải lụa rũ form cơ bản.
          Áo cổ V cài khuy' ;
          $product->price = 490.000 ;
-         $product->image = 'aobuom.jpg';
+         $product->image1 = 'aobuom.jpg';
+         $product->image2 = 'monarch-print-shirt-3-w.jpg' ;
+         $product->image3 = 'monarch-print-shirt-4-w.jpg' ;
+         $product->save() ;
 
          $product = new Product() ;
         $product->id = 9;
@@ -101,7 +125,10 @@ class createProductSeeder extends Seeder
          Sản phẩm form cơ bản.
          Hình in được in ở mặt trước sản phẩm.' ;
          $product->price = 120.000 ;
-         $product->image = 'htbe.jpg';
+         $product->image1 = 'htbe.jpg';
+         $product->image2 = '';
+         $product->image3 = '';
+         $product->save() ;
 
          $product = new Product() ;
         $product->id = 10;
@@ -112,6 +139,9 @@ class createProductSeeder extends Seeder
          3 ngăn chính, trong đó có 1 ngăn được trang bị zipper YKK.
          1 ngăn phụ có zipper YKK kèm 4 ngăn đựng thẻ.' ;
          $product->price = 999.000 ;
-         $product->image = 'logopatternlogo.jpg';
+         $product->image1 = 'logopatternlogo.jpg';
+         $product->image2 = '';
+         $product->image3 = '';
+         $product->save() ;
     }
 }
