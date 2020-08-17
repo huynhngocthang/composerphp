@@ -21,6 +21,8 @@ class CreateProductsTable extends Migration
             $table->longText('image1');
             $table->longText('image2') ;
             $table->longText('image3') ;
+            $table->unsignedBigInteger('id_productline') ;
+            $table->foreign('id_productline')->references('id')->on('productline') ;
             $table->timestamps();
         });
     }

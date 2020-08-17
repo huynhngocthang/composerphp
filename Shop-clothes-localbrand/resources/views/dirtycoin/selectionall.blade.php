@@ -179,7 +179,7 @@
                         </a>
                       <div class="card-body text-center">
                       <p class="card-text">{{ $product->name }}</p>
-                      <p class="card-text "><small class="text-muted font-weight-bold">{{ $product->price }}.000đ</small></p>
+                      <p class="card-text "><small class="text-muted font-weight-bold">{{number_format($product->price)}}VNĐ</small></p>
                       </div>
                     </div>
             </div>

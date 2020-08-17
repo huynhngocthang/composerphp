@@ -20,10 +20,11 @@ class createProductSeeder extends Seeder
          Ví đóng mở và sở hữu khóa dán velcro an toàn tiện lợi.
          3 ngăn chính, trong đó có 1 ngăn được trang bị zipper YKK.
          1 ngăn phụ có zipper YKK kèm 4 ngăn đựng thẻ.' ;
-         $product->price = 400.000 ;
+         $product->price = 400000 ;
          $product->image1 = 'volcano.jpg';
          $product->image2 = 'volcano-wallet-2w.jpg' ;
          $product->image3 = 'volcano-wallet-3-w.jpg' ;
+         $product->id_productline = 1 ;
          $product->save() ;
 
         $product = new Product() ;
@@ -35,10 +36,11 @@ class createProductSeeder extends Seeder
          Ví đóng mở có khóa bấm an toàn.
          Ví có 2 ngăn chính, có khóa kéo cho 1 ngăn.
          Số lượng ngăn đựng thẻ lên đến 8 ngăn.';
-         $product->price = 290.000 ;
+         $product->price = 290000 ;
          $product->image1 = 'wallewallet.jpg';
          $product->image2 = 'dc-walle-wallet-2-w.jpg' ;
          $product->image3 = 'dc-walle-wallet-3-w.jpg' ;
+         $product->id_productline = 1 ;
          $product->save() ;
 
          $product = new Product() ;
@@ -48,10 +50,11 @@ class createProductSeeder extends Seeder
          Logo được thêu ở phía túi trái.
          Form oversize.
          Lưng quần bo vải gân kèm drawstring thun bên trong.' ;
-         $product->price = 450.000 ;
+         $product->price = 450000 ;
          $product->image1 = 'quancaro.jpg';
          $product->image2 = '';
          $product->image3 = '';
+         $product->id_productline = 1 ;
          $product->save() ;
 
          $product = new Product() ;
@@ -60,10 +63,11 @@ class createProductSeeder extends Seeder
         $product->introduce = 'Sản phẩm được làm từ cotton nhập khẩu
          Tag cao su được thêu trực tiếp lên sản phẩm
          Free size' ;
-         $product->price = 120.000 ;
+         $product->price = 120000 ;
          $product->image1 = 'vidirtcoin.jpg';
          $product->image2 = 'head-band-bla-2.jpg' ;
          $product->image3 = 'head-band-bla-3' ;
+         $product->id_productline = 1 ;
          $product->save() ;
 
          $product = new Product() ;
@@ -73,10 +77,11 @@ class createProductSeeder extends Seeder
          Form oversize
          Khóa áo được sử dụng nút bấm tiện dụng.
          Áo có hai túi ở hai bên thân áo' ;
-         $product->price = 650.000 ;
+         $product->price = 650000 ;
          $product->image1 = 'monarchallover.jpg';
          $product->image2 = '15.jpg' ;
          $product->image3 = 'monarch-all-over-print-jacket-3-w.jpg' ;
+         $product->id_productline = 1 ;
          $product->save() ;
 
          $product = new Product() ;
@@ -87,10 +92,11 @@ class createProductSeeder extends Seeder
          Tag cao su được thêu trực tiếp ở phía túi trái.
          Form oversize.
          Lưng quần bo vải gân kèm drawstring thun bên trong.' ;
-         $product->price = 500.000 ;
+         $product->price = 500000 ;
          $product->image1 = 'quanpatern.jpg';
          $product->image2 = '';
          $product->image3 = '';
+         $product->id_productline = 1 ;
          $product->save() ;
 
          $product = new Product() ;
@@ -101,10 +107,11 @@ class createProductSeeder extends Seeder
          Túi có 4 ngăn phụ được trang bị khóa zip.
          1 ngăn lớn chính trang bị dây rút và khóa bấm.
          Dây đeo có thể tùy chinh độ dài' ;
-         $product->price = 800.000 ;
+         $product->price = 800000 ;
          $product->image1 = 'logopattern.jpg';
          $product->image2 = '';
          $product->image3 = '';
+         $product->id_productline = 1 ;
          $product->save() ;
 
          $product = new Product() ;
@@ -112,10 +119,11 @@ class createProductSeeder extends Seeder
         $product->name = 'Monarch Print Shirt' ;
         $product->introduce = 'Áo vải lụa rũ form cơ bản.
          Áo cổ V cài khuy' ;
-         $product->price = 490.000 ;
+         $product->price = 490000 ;
          $product->image1 = 'aobuom.jpg';
          $product->image2 = 'monarch-print-shirt-3-w.jpg' ;
          $product->image3 = 'monarch-print-shirt-4-w.jpg' ;
+         $product->id_productline = 1 ;
          $product->save() ;
 
          $product = new Product() ;
@@ -124,10 +132,11 @@ class createProductSeeder extends Seeder
         $product->introduce = ' Sản phẩm 100% cotton.
          Sản phẩm form cơ bản.
          Hình in được in ở mặt trước sản phẩm.' ;
-         $product->price = 120.000 ;
+         $product->price = 120000 ;
          $product->image1 = 'htbe.jpg';
          $product->image2 = '';
          $product->image3 = '';
+         $product->id_productline = 1 ;
          $product->save() ;
 
          $product = new Product() ;
@@ -138,10 +147,11 @@ class createProductSeeder extends Seeder
          Ví đóng mở và sở hữu khóa dán velcro an toàn tiện lợi.
          3 ngăn chính, trong đó có 1 ngăn được trang bị zipper YKK.
          1 ngăn phụ có zipper YKK kèm 4 ngăn đựng thẻ.' ;
-         $product->price = 999.000 ;
+         $product->price = 999000 ;
          $product->image1 = 'logopatternlogo.jpg';
          $product->image2 = '';
          $product->image3 = '';
+         $product->id_productline = 1 ;
          $product->save() ;
     }
 }

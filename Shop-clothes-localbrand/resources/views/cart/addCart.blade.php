@@ -2,60 +2,23 @@
 
 @section('title','Thêm sản phẩm')
 
+@push('addcart-css')
+<link rel="stylesheet" href="{{ asset('css/addcart.css') }}">
+@endpush
+
 @include('totality.header')
 
 @section('content')
 
 <div class="container">
-                    @if (session('cart'))
-            <div class="d-flex">
-                <div class="p-2">
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th>Sản phẩm</th>
-                            <th>Số lượng</th>
-                            <th>Tổng tiền</th>
-                            <th>Xóa</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                    @foreach (session('cart') as $key => $item)
-                    <tr>
-                        <td>
-                            <div class="d-flex">
-                                <div class="p-2">
-                                    <img style="max-width:150px" src="../../storage/images/{{ $item['image'] }}" alt="errr">
-                                </div>
-                                <div style="margin-top: 4.3rem" class="p-2">
-                                    <label class="ml-2">{{ $item['name'] }}</label>
-                                    <p class="ml-5">{{$item['price'] }}.000đ</p>
-                                </div>
-                            </div>
-                        </td>
-                            <td><p style="margin-top: 4.8rem">{{ $item['sl'] }}</p></td>
-                            <td><p style="margin-top: 4.8rem">{{ $item['total_detail']}}.000đ</p></td>
-                            <td><p style="margin-top: 3.2rem"><a href="#" style="color: black" ><i style="font-size:24px" class="fa mt-4">&#xf014;</i></a></p></td>
-                          </tr>
-                    @endforeach
-                </tbody>
-            </table>
+     @if (session('cart'))
+     <div id="table_cart">
+        @include('totality.table_cart')
+     </div>
+
+    <div class="mb-4" >
+    <a  href="{{ route('dirtcoinall') }}"><button class="btn btn-dark">Tiếp tục mua hàng</button></a>
         </div>
-        <div class="p-2 ml-5">
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                  <th>Tổng Tiền :</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a href=""><button class="btn btn-dark">Thanh Toán</button></a></td>
-                  </tr>
-                </tbody>
-              </table>
-        </div>
-    </div>
     @else
     <div class="d-flex justify-content-around  mb-3">
         <div class="p-2 ">
@@ -74,8 +37,30 @@
 
 
 
-
-
-
-
 @include('totality.footer')
+
+@push('addcart-js')
+    <script>
+        $(document).ready(function() {
+            cartAjax('#id_detail');
+         });
+
+        function cartAjax(ele){
+            url =  $(ele).data('url');
+            sl = $(ele).val();
+            id = $(ele).data('id');
+            $.ajax({
+                    url: url,
+                    type: 'GET',  // http method
+                    data: {
+                        sl: sl,
+                        id:id
+                    },
+                    success: function (data) {
+                    $('#table_cart').html(data['table']);
+                    document.getElementById('count_product').innerHTML = data['count'] ;
+                    }
+
+            });}
+    </script>
+@endpush

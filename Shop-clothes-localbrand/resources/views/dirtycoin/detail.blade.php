@@ -51,7 +51,7 @@
             <div class="card border-card" style="width: 18rem;">
                 <div class="card-body">
                 <h6 class="card-title ">{{ $product->name }}</h6>
-                <p>{{ $product->price }}.000đ</p>
+                <p> {{ number_format($product->price) }} VNĐ</p>
                   <select class="form-control form-control-lg mb-3">
                     <option>M</option>
                     <option>X</option>
@@ -97,7 +97,6 @@
           </div>
         </div>
     </div>
-
 </div>
 
 

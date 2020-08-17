@@ -14,10 +14,8 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+Route::get('/','dirtycoinController@index')->name('dirtcoinall') ;
 
 Route::get('/dasboard', function() {
 
@@ -25,16 +23,19 @@ Route::get('/dasboard', function() {
 });
 
 Route::group(['prefix' => 'dirtycoins'], function () {
-    Route::get('/','dirtycoinController@index')->name('dirtcoinall') ;
-
     Route::get('/detail/{id}','dirtycoinController@show')->name('detail') ;
 });
 
 Route::group(['prefix' => 'cart'], function () {
     Route::get('/','CartController@index')->name('cartAll') ;
     Route::get('/{product}/add','CartController@addCart')->name('addcart') ;
-    Route::get('/{product}/add'. '')->name('destroycart') ;
+    Route::get('{product}/destroy', 'CartController@RemoveRow')->name('removecart') ;
+    Route::get('clear','CartController@clearall')->name('clearall');
+    Route::get('apiCart','CartController@apiCart')->name('apiCart');
+    Route::get('checkout','CartController@checkout')->name('checkout') ;
 });
+
+
 
 
 

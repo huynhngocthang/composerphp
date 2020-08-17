@@ -15,9 +15,9 @@
     </div>
 </div>
 <div class="card text-center">
-    <div class="card-body">
+    <div  class="card-body">
       <h5 class="card-title">Giới thiệu</h5>
-      <p class="card-text">Dirty Coins Studio Xuất hiện trên thị trường từ đầu năm 2017, Dirtycoins mang sức mạnh của một thương hiệu local brand đầy cá tính với những sản phẩm thời trang hàng đầu xu thế. Dirtycoins thực <br>
+      <p class="card-text text-center">Dirty Coins Studio Xuất hiện trên thị trường từ đầu năm 2017, Dirtycoins mang sức mạnh của một thương hiệu local brand đầy cá tính với những sản phẩm thời trang hàng đầu xu thế. Dirtycoins thực <br>
            chất là một cách lồng ghép khéo léo về sự ra đời của thương hiệu. Chữ Y trên đồng tiền tượng trưng cho tiền thân của Dirtycoins, The Yars Shop. Bắt nguồn từ Yars, Dirtycoins trân trọng giá trị của <br>
             đồng tiền xương máu, thành quả lao động đầy mồ hôi, bụi bẩn và nước mắt. Với sức hút của mình, Dirtycoins trở thành biểu tượng cho phong cách thời trang mạnh mẽ, táo bạo, và được ưa <br>
              chuộng rộng rãi. Dirtycoins mang đến một cái góc độ độc đáo không những về phong cách sống mà còn về gu ăn mặc hiện đại. Dirtycoins nhận thức được nhu cầu đang phát triển của thị trường <br>
@@ -26,7 +26,7 @@
                 chi nhánh trên toàn quốc, đem tới 1 nền văn hoá rất riêng của Dirty Coins.</p>
     </div>
     <div class="d-flex bd-highlight">
-        <div class="p-2 flex-fill bd-highlight">
+        <div class="p-2 flex-fill bd-highlight ml-5">
             <div class="d-flex flex-column bd-highlight mb-3 text-left">
                 <div class="p-2 bd-highlight "><h2>Hệ thống cửa hàng</h2></div>
                 <div class="p-2 bd-highlight ">
@@ -79,7 +79,7 @@
                 </div>
               </div>
         </div>
-        <div class="p-2 flex-fill bd-highlight">
+        <div class="p-2 flex-fill bd-highlight mr-3">
             <div class="p-2 bd-highlight "><h2>Mạng xã hội</h2></div>
                 <div class="p-2 bd-highlight instagram-link ">
                     <a target="_blank" href="https://www.facebook.com/DirtyCoins.VN"><i style="font-size:24px" class="fa">&#xf09a;</i></a>
@@ -90,7 +90,7 @@
                     <img style="width:200px; height:80px" src="../../storage/images/bocongthuong.png" alt="err">
                 </div>
         </div>
-        <div class="p-2 flex-fill bd-highlight br-highlight">
+        <div class="p-2 flex-fill bd-highlight br-highlight mr-5">
             <div class="p-2 bd-highlight "><h2>Fanpage</h2></div>
                     <div class="card br-card" >
                         <div class="card-body">
@@ -116,7 +116,7 @@
                         </div>
                       </div>
 
-                      <div class="card " >
+                      <div class="card" >
                         <div class="card-body d-flex">
                             {{-- <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/"> --}}
                             <div id="slider" class="size-image">

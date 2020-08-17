@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    font-family:  Helvetica, 'Bebas' sans-serif;
+}
+
+.span_sl {
+    background-color: #2a9dcc;
+    text-align: center;
+    padding: 1px 0;
+    border: 1px solid #2a9dcc;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -45px;
+    right:-25px ;
+}
+
+
